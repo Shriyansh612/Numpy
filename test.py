@@ -1,14 +1,13 @@
-import numpy as np
+# print(sum(range(5),-1))
+# from numpy import *
+# print(sum(range(5),-1))
 
-def logical_flatten(arr):
-    result = np.empty(arr.size, dtype=arr.dtype)
+# import numpy as np
 
-    for i, index in enumerate(np.ndindex(arr.shape)):
-        result[i] = arr[index]
+# arr = np.array([1,2,3,4,5])
+# print(np.sum(arr,-1))
+arr = [1,2,3,4,5]
+print(sum(arr,-1))
 
-    return result
-
-a = np.array([[1, 2], [3, 4]])
-
-print(logical_flatten(a))  # [1 2 3 4]
-print(a.flatten())  
+arr = ([1,2,3,4,5])
+print(sum(arr))
